@@ -19,7 +19,11 @@ public class Game {
     private String platforms;
     private Double score;
     private String imgUrl;
+
+    @Column(columnDefinition = "TEXT") // Gerar o texto acima de 255 caracteres
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT") // Gerar o texto acima de 255 caracteres
     private String longDescription;
 
     public Game() {}
